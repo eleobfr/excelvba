@@ -1,6 +1,7 @@
-Attribute VB_Name = "Module1"
+Attribute VB_Name = "ModuleDeDemonstration"
 Option Explicit
 
+'Fonction VBA qui renvoit un résultat de type entier
 Function Additionner(a As Integer, b As Integer) As Integer
 Dim somme As Integer
 
@@ -9,6 +10,7 @@ Dim somme As Integer
     Additionner = somme
 End Function
 
+'Sub VBA qui ne renvoie pas de résultat
 Sub FaireDesCalculs()
 Dim a As Integer, o As Integer, resultatDuCalcul As Integer
 
@@ -16,6 +18,6 @@ Dim a As Integer, o As Integer, resultatDuCalcul As Integer
     o = 9
     resultatDuCalcul = Additionner(a, o)
     
-    MsgBox "Le r�sultat de l'addition de " & a & " + " & o & " = " & resultatDuCalcul, vbInformation, "ELEOB"
+    MsgBox "Le résultat de l'addition de " & a & " + " & o & " = " & resultatDuCalcul, vbInformation, "ELEOB"
     
 End Sub
